@@ -13,4 +13,3 @@ public class MyMethodInterceptor implements MethodInterceptor {
 		return proxy.invoke(obj, args);
 	}
 }
-1234
