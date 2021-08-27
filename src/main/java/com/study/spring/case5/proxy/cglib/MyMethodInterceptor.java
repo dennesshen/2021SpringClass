@@ -12,5 +12,5 @@ public class MyMethodInterceptor implements MethodInterceptor {
 		System.out.println("麻煩請出示實聯制");
 		return proxy.invoke(obj, args);
 	}
-
 }
+1234
