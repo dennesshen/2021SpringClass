@@ -8,6 +8,6 @@ public class TestAop {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("aop_conf.xml");
 		Calc calc = ctx.getBean("calcImpl",Calc.class);
 		System.out.println(calc.add(2, 1));
-		System.out.println(calc.div(10, 2));
+		System.out.println(calc.div(10,0));
 	}
 }

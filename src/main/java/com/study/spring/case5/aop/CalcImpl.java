@@ -6,14 +6,14 @@ import org.springframework.stereotype.Component;
 public class CalcImpl implements Calc{
 
 	@Override
-	public int add(int x, int y) {
-		int result = x+y;
+	public Integer add(Integer x, Integer y) {
+		Integer result = x+y;
 		return result;
 	}
 
 	@Override
-	public int div(int x, int y) {
-		int result = x/y;
+	public Integer div(Integer x, Integer y) {
+		Integer result = x/y;
 		return result;
 	}
 
