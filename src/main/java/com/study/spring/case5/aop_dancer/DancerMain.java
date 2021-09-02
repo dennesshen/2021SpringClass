@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class DancerMain {
 	public static void main(String[] args) {
 		ApplicationContext ctxApplicationContext = new AnnotationConfigApplicationContext(AOPConfig.class);
-		Performance performance = ctxApplicationContext.getBean("dancer",Dancer.class);
+		Performance performance = (Performance)ctxApplicationContext.getBean("dancer");
 		performance.perform();
 	}
 }

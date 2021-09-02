@@ -49,7 +49,7 @@ public class MyLoggerAspect {
 			System.out.println("後置通知 -");
 		}
 		
-		//返回通知(可以設定 來接收方法的返回值)
+		//返回通知(可以設定來接收方法的返回值)
 		@AfterReturning(value = "pt1()", returning = "result" )
 		public void afterReturning(Object result) {
 			System.out.println("返回通知-result="+result);
