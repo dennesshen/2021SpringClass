@@ -13,6 +13,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class AOPConfig {
 	@Bean(name = "dancer")
 	public Performance dancer() {
+		System.out.println("testWindows");
 		return new Dancer();
 	}
 }
