@@ -7,6 +7,16 @@ public class DancerMain {
 	public static void main(String[] args) {
 		ApplicationContext ctxApplicationContext = new AnnotationConfigApplicationContext(AOPConfig.class);
 		Performance performance = (Performance)ctxApplicationContext.getBean("dancer");
-		performance.perform();
+		
+		try {
+			performance.perform();
+		} catch (Exception e) {
+			System.out.println(e);
+			//轉換跑道
+			//舞蹈轉唱歌
+			Singer singer = (Singer) performance;
+			singer.sing();
+		}
+		
 	}
 }
