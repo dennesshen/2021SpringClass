@@ -9,6 +9,7 @@
 	<configs>
 		<config>conf/aop_conf.xml</config>
 		<config>conf/aopxml_config.xml</config>
+		<config>conf/jdbc_config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
