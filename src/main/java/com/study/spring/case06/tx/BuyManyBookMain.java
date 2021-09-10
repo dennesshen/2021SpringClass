@@ -7,10 +7,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import com.study.spring.case06.tx.controller.BookController;
 import com.study.spring.case06.tx.controller.BookControllerImpl;
 
-public class BuyBookMain {
+public class BuyManyBookMain {
 
 	public static void main(String[] args) {
-		//Wallet 1 要買 Book1
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("jdbc_config.xml");
 		JdbcTemplate jdbcTemplate = ctx.getBean("jdbcTemplate",JdbcTemplate.class); 
 		
@@ -18,7 +17,7 @@ public class BuyBookMain {
 		int wid = 1;
 		int bid = 1;
 		try {
-			bookController.buyBook(wid, bid);
+			bookController.buyBooks(wid, bid, bid, bid);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
